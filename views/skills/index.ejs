@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skillz, Listed</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <small><a href="/">Go Home</a></small>
+    <h1>Exhaustive List of Skillz</h1>
+
+    <% skills.forEach(function(skill, idx) { %>
+      <details>
+        <summary>Skill <%= `${idx+1}`%></summary>
+        <dl>
+          <dt>Skill Name</dt>
+          <dd><%- skill.skillName %></dd>
+          <dt>Year Skill Acquired</dt>
+          <dd><%= skill.yearAcquired %></dd>
+          <dt>Value of Skill</dt>
+          <dd><%= skill.value %></dd>
+        </dl>
+      </details>
+    <% }); %>
+
+    <!-- <details>
+      Skill 1 Name
+      <summary>
+        Skill 1 Info
+      </summary>
+    </details>
+    <details>
+      Skill 1 Name
+      <summary>
+        Skill 1 Info
+      </summary>
+    </details>
+    <details>
+      Skill 1 Name
+      <summary>
+        Skill 1 Info
+      </summary>
+    </details> -->
+  </body>
+</html>

@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+details {
+  padding-block-end: .5em;
+}
+
+summary {
+  text-transform: uppercase;
+}
+
+dt  {
+  font-weight: 700;
+}
+
+dd:last-child {
+  padding-block-end: .5em;
+  border-block-end: .1em solid black;
+}
