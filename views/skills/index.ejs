@@ -10,24 +10,20 @@
   <small><a href="/">Go Home</a></small>
   <h1>Exhaustive List of Skillz</h1>
 
-  <% skills.forEach(function(skill, idx) { %>
-    <details>
-      <summary>Skill <%= `${idx+1}`%>
-      </summary>
-      <dl>
-        <dt>Skill Name</dt>
-        <dd><%- skill.skillName %></dd>
-        <dt>Year Skill Acquired</dt>
-        <dd>
-          <%= skill.yearAcquired %>
-        </dd>
-        <dt>Value of Skill</dt>
-        <dd>
-          <%= skill.value %>
-        </dd>
-      </dl>
-    </details>
-    <% }); %>
+    <table>
+      <tr>
+        <th>Skill Name</th>
+        <th>Year Skill Acquired</th>
+        <th>Value of Skill</th>
+      </tr>
+      <% skills.forEach(function(skill) { %>
+        <tr>
+          <td><%- skill.skillName %></td>
+          <td><%= skill.yearAcquired %></td>
+          <td><%= skill.value %></td>
+        </tr>
+      <% }); %>
+    </table>
 
     <%- include('../partials/footer') %>
 </body>

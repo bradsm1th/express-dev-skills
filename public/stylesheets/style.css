@@ -1,5 +1,4 @@
 body {
-  margin: 0 auto;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   position: relative;
@@ -30,8 +29,16 @@ dd:last-child {
 
 footer {
   display: flex;
+  position: fixed;
+  bottom: 2em;
+  width: 100%;
   justify-content: center;
   padding-block-start: 1em;
   border-block-start: .1em dashed lightgrey;
   margin-top: auto;
+}
+
+th {
+  border-bottom: 1px solid black;
+  text-align: left;
 }
