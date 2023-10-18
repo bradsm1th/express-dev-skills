@@ -1,6 +1,11 @@
 body {
+  margin: 0 auto;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
@@ -21,5 +26,12 @@ dt  {
 
 dd:last-child {
   padding-block-end: .5em;
-  border-block-end: .1em solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 1em;
+  border-block-start: .1em dashed lightgrey;
+  margin-top: auto;
 }
