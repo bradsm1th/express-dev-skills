@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add a Skill</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <small><a href="/">Go Home</a></small>
+  <form action="/skills" method="POST">
+    <div><label for="skillName">Name of Skill</label>
+      <input id="skillName" name="skillName" type="text">
+    </div>
+    <div><label for="yearAcquired">Year Skill Acquired</label>
+      <input id="yearAcquired" name="yearAcquired" type="text">
+    </div>
+    <div><label for="value">Value Placed on Skill</label>
+      <input id="value" name="value" type="number" min="1" max="5">
+    </div>
+
+    <button type="submit">Add Skill</button>
+  </form>
+
+  <%- include('../partials/footer') %>
+</body>
+
+</html>

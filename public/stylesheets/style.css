@@ -34,11 +34,30 @@ footer {
   width: 100%;
   justify-content: center;
   padding-block-start: 1em;
-  border-block-start: .1em dashed lightgrey;
+  border-block-start: .1em double lightgrey;
   margin-top: auto;
 }
 
 th {
   border-bottom: 1px solid black;
   text-align: left;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  width: 50ch;
+}
+
+form button {
+  grid-column: 1;
+  grid-row: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    background: #222;
+    color: white;
+  }
 }

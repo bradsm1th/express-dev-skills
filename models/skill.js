@@ -7,13 +7,18 @@ const skills = [
 // what do I want other modules to have access to from this one?
 module.exports = {
   listAllSkills,
-  listOneSkill
+  create: createNewSkill
 }
 
 function listAllSkills() {
   return skills;
 }
 
-function listOneSkill(idx) {
-  return "Not done yet"
+function createNewSkill(skillObject) {
+  // add skill
+  // add year
+  // add value
+
+  // push to database (array, here)
+  skills.push(skillObject)
 }

@@ -1,4 +1,5 @@
 var express = require('express');
+const skill = require('../models/skill');
 var router = express.Router();
 
 /* GET home page. */

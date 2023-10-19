@@ -8,4 +8,7 @@ module.exports = router;
 // oh duh, i haven't called a controller function yet
 // GET /skills
 router.get('/', skillsController.index );
-
+// GET /skills/new
+router.get('/new', skillsController.new);
+// POST /skills
+router.post('/', skillsController.create);
